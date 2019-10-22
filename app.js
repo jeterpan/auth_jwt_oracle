@@ -38,7 +38,7 @@ async function finalizaApp(e) {
     try {
         console.log('Fechando o servidor web...')
         
-        await servidorWeb.termina()
+        await servidorWeb.encerra()
     } catch (err) {
         console.log(err)
 

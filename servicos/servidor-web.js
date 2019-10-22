@@ -34,7 +34,7 @@ function inicializa() {
 
 module.exports.inicializa = inicializa()
 
-function termina() {
+function encerra() {
     return new Promise( (resolve, reject) => {
         httpServer.close( erro => {
             if(erro) {
@@ -47,4 +47,4 @@ function termina() {
     })
 }
 
-module.exports.termina = termina
+module.exports.encerra = encerra
