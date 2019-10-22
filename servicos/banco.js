@@ -8,8 +8,8 @@ async function inicializa() {
 
 module.exports.inicializa = inicializa
 
-function executaSQL (declaracao,binds,opcoes = {}) {
-    return new Promise ( (resolve, reject) => {
+function executaSQL(declaracao,binds,opcoes = {}) {
+    return new Promise( (resolve, reject) => {
         let conexao
 
         opcoes.outFormat = oracledb.DB_TYPE_OBJECT
